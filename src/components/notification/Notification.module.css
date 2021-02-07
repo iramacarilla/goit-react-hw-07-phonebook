@@ -1,0 +1,32 @@
+.notification {
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 200px;
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-align: center;
+
+}
+
+
+.enter {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  .enterActive {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 250ms, transform 250ms;
+  }
+  .exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .exitActive {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 250ms, transform 250ms;
+  }

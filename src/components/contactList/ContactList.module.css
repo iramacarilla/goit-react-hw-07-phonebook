@@ -1,0 +1,70 @@
+.contactList {
+    
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
+    padding: 30px;
+    height: auto;
+ 
+}
+.contactList h2 {
+    text-align: center;
+    color: #ffffff;
+}
+.contactData {
+    width: 95%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+}
+.contactData li {
+    display: flex;
+    
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 5px; 
+    border: white solid 0.01px;
+   
+}
+.contactData p { 
+    font-size: 16px;
+    color: white;
+    
+    
+}
+.contactData button { 
+    display: block;
+    padding: 5px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: darksalmon;
+    color: white;
+}
+.enter {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  .enterActive {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 250ms ease-in-out;
+  }
+  
+  .exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .exitActive {
+    opacity: 0;
+    transform: translateX(200%);
+    transition: all 250ms ease-in-out;
+  }
